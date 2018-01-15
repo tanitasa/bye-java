@@ -1,0 +1,17 @@
+language: java
+jdk:
+- oraclejdk8
+- oraclejdk7
+notifications:
+  email:
+    recipients:
+    - tansalalv@alum.us.es
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: IKXuEMDq1Bt4o3Or4Ggr+XphpTx7OUKSpFugcnKmQFx6h7ERY26KP5ovxwB6/zxZCf5MOAsfHrsVyiU5DkktoGwzh4Pj0Jlymqs655N4uIRQ87w71q2c7U0Ek30wp+VKT18dtfxgF6eZvxddZuSdUPQ0ItRHpbsA01K8oOl6aFXTvRTlyxMhgcLKiT/GPG+6jZKWSLZungSqx+G+TnOTIl4sfPyotiW4yekJLABopAD6w8FmkIFfFeWNILps2ZNCGiNDjUZcroQSKDjVuhUsmhfG9N2V9yDmxiYjuyIUO7/vllUOCJdN+/TazPnFEkVj/MXpDoCU6nYDpnb4n3ELKe3MqyUnf8FCbPy/VraKCj5QYvDSz5pDGo0gONXWEUiEzN5wIKB/OqB8BnqZPoHQGrblLhltLAW4IFtVTJA+ha0eE5ptoTIPY2jPlhNbrlOPEgmoFn8vYOIssIIttBTbNS96xS9pu2ZxYwICFvP2ypvGbBfR+rLd8q/mi1dNrif5C7MX15Vef3/597wHwc2DvtcPb2sMP28k9vShdOpXiOERuHY4ERhvl9RaIq9hEFbdN9VtZV4cEUEhuN7u7DkDX8p4WRF0KFok8GF9B1noDmqOdvyx1y8xEu1IJaFuOG4b6yWFh7/VMAYEBteT1cHPzb3yk+C8azR3Zr7eLoaImBA=
+  app: examenegc
+  on:
+    repo: tanitasa/bye-java
